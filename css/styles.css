@@ -72,7 +72,7 @@ header {
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
 }
 
@@ -117,7 +117,7 @@ header {
 }
 .contacts {
     display: flex;
-        margin-left: auto;
+    margin-left: auto;
 }
 .contacts .item + .item {
     margin-left: 50px;
@@ -176,6 +176,7 @@ text-align: center;
     line-height: 1.8;
     letter-spacing: 0.06em;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     padding: 10px 32px;
     border-radius: 4px;
@@ -314,11 +315,14 @@ position: absolute;
 .footer {
     background-color: var(--color-bgd-dark);
 }
-.footer .logo {
-    display: block;
-    padding-top: 80px;
-    padding-bottom: 0;
+
+.footer-content .logo {
+   display: block;
+   margin-bottom: 20px;
+   padding-top: 0;
+   padding-bottom: 0;
 }
+
 
 .logo-studio.footer {
     color: var(--color-brand);
@@ -327,13 +331,14 @@ position: absolute;
     font-style: normal;
     line-height: 1.7;}
 
- .list-adress-item {
-     margin-bottom: 9px;
- }
 
- .adress-list {
-     padding-bottom: 60px;
-     padding-top: 20px;
+ .footer-content {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.list-adress-item { 
+     margin-bottom: 9px;
  }
 
  .list-adress-item:last-child {
@@ -366,8 +371,9 @@ color: var(--color-accent);
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 30px;
 }
+
 .nav {
     display: flex;
     align-items: center;
@@ -376,20 +382,12 @@ color: var(--color-accent);
 }
 .portfolio-nav {
      align-items: center;
-     padding-bottom: 16px;
+     margin-bottom: 50px;
 }
 
 .portfolio-item {
-margin-right: 30px;
-margin-bottom: 30px;
 
 background-color: var(--color-brand);
-}
-.portfolio-item:nth-child(3n) {
-margin-right: 0;
-}
-.portfolio-item:nth-last-child(-n+3) {
-    margin-bottom: 0;
 }
 
 .button-nav {
@@ -404,6 +402,7 @@ margin-right: 0;
         border-radius: 4px;
         background: var(--color-bgd-light);
         cursor: pointer;
+        border: none;
         }
 
 .nav .item {
@@ -419,6 +418,7 @@ margin-right: 0;
     color: var(--color-brand);
     background-color: var(--color-accent);
     border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-title {
     margin-top: 0;
@@ -438,11 +438,9 @@ letter-spacing: 0.06em;
 .portfolio-card {
     padding: 20px 24px;
     width: 370px;
-    border: 1px solid var(--color-solid-portfolio);
-}
-
-.portfolio-examples {
-    padding-top: 34px;
+    border-bottom: 1px solid var(--color-solid-portfolio);
+    border-left: 1px solid var(--color-solid-portfolio);
+    border-right: 1px solid var(--color-solid-portfolio);
 }
 
 .section-portfolio {
