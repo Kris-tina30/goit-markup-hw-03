@@ -145,13 +145,13 @@ header {
 .hero {color: var(--color-brand);
 background-color: var(--color-bgd-dark);
 text-align: center;
-
+ padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-content {
     width: 696px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+   
 }
 
 
@@ -312,10 +312,6 @@ position: absolute;
 
 /* footer*/
 
-.footer {
-    background-color: var(--color-bgd-dark);
-}
-
 .footer-content .logo {
    display: block;
    margin-bottom: 20px;
@@ -323,19 +319,22 @@ position: absolute;
    padding-bottom: 0;
 }
 
+.footer {
+    background-color: var(--color-bgd-dark);
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
 
 .logo-studio.footer {
     color: var(--color-brand);
+     padding-top: 0;
+    padding-bottom: 0;
 }
 .adress {
     font-style: normal;
     line-height: 1.7;}
 
-
- .footer-content {
-    padding-bottom: 60px;
-    padding-top: 60px;
-}
 
 .list-adress-item { 
      margin-bottom: 9px;
@@ -354,6 +353,9 @@ color: var(--color-accent);
 }
 .link-contact.footer {
     color: var(--color-brand-secondary);
+    padding-top: 0;
+    padding-bottom: 0;
+    
 }
 .link-contact.footer:hover,
 .link-contact.footer:focus {
@@ -365,9 +367,9 @@ color: var(--color-accent);
 /* Portfolio */
 
 
-.section-portfolio {
+/* .section-portfolio { 
     background-color: var(--color-mainbgd-portfolio);
-}
+}*/
 .portfolio {
     display: flex;
     flex-wrap: wrap;
